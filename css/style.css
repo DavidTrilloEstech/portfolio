@@ -1,3 +1,5 @@
+
+
 body{
     background-color: #2D2D2D;
     color: white;
@@ -12,6 +14,7 @@ body{
 #menuPrincipal{
     padding-top: 20px;
     background-image: linear-gradient(#2D2D2D, #1C1C1C);
+    font-size: larger;
 }
 
 #menuPrincipal ul{
@@ -22,6 +25,7 @@ body{
 
 #menuPrincipal li{
     padding: 10px;
+    
 }
 
 #menuPrincipal a{
@@ -42,11 +46,14 @@ body{
 
 #inicio .btn{
     width: 250px;
+    font-size: 28px;
     border-radius: 100px;
     margin-top: 7vh;
+    color: white;
 }
 #inicio .btn:hover{
     background-color: #45EF14 ;
+    color: black;
     transition: 200ms;
 }
 
@@ -76,22 +83,29 @@ body{
 
 #contenidoSobreMi{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 50px;
+    font-size: 20px;
     align-items: center;
+    
+    
 }
 
-#contenidoSobreMi div{
+#contenidoSobreMi .textoSobreMi{
     border: 0.5px solid white;
-    width: 35vw;
+    width: 50vw;
     padding: 10px;
-    margin: 0px 30px 50px;
+    margin: 0px 0px 50px;
 }
+
 
 #lenguajesUsados{
     height: 80px;
     display: flex;
     justify-content: space-around;
     padding: 10px 20px;
+    background-color: whitesmoke;
 }
 
 #contenidoProyectos{
@@ -107,8 +121,55 @@ body{
     margin-bottom: 15px;
 }
 
+form div:first-of-type{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 75vh;
+}
+
+.inputContacto{
+    width: 100%;
+     
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+}
+
+#contacto button{
+    background-color: #35bb10;
+    width: 100%;
+    padding: 20px;
+    font-size: 23px;
+}
+
+#contacto button:hover{
+    background-color: #45EF14;
+}
+
+.halfLengthInput{
+    margin-bottom: 20px; 
+}
+
+.halfLengthInput:first-of-type{
+    margin-right: 10px;
+}
+
+.halfLengthInput:nth-of-type(2){
+    margin-left: 10px;
+}
+
+.fullLengthInput{
+    height: 300px;
+    margin-bottom: 50px; 
+    text-align: start;
+}
+
 footer{
-    
+    margin-top: 7vh;
     display: flex;
     justify-content: space-between;
     padding: 20px 5%;
